@@ -91,7 +91,7 @@ main { margin-top: 0; }
     justify-content: center;
     text-align: center;
     padding: 4rem 2rem;
-    background: #ffffff;
+    background: #f0efed;
 }
 
 .hero-content { max-width: 800px; }
@@ -133,7 +133,7 @@ main { margin-top: 0; }
 
 .logos-section { 
     padding: 23px 2px; 
-    background-color: #ffffff; 
+    background-color: #f0efed; 
 }
 
 .logos-container {
@@ -182,7 +182,7 @@ main { margin-top: 0; }
 
 .gallery-section { 
     padding: 4rem 2rem; 
-    background-color: #ffffff; 
+    background-color: #f0efed; 
 }
 
 
@@ -273,11 +273,11 @@ main { margin-top: 0; }
 
 .content-section { 
     padding: 4rem 2rem; 
-    background-color: #ffffff; 
+    background-color: #f0efed; 
 }
 
 .content-section:nth-child(even) { 
-    background-color: #ffffff; 
+    background-color: #f0efed; 
 }
 .container { 
     max-width: 800px; 
@@ -298,7 +298,7 @@ main { margin-top: 0; }
 /*About (Meet the Person)*/
 
 .about-meet { 
-    background: #ffffff; 
+    background: #f0efed; 
     padding: 3.5rem 1rem 4rem; 
 }
 .about-wrap { 
@@ -366,7 +366,7 @@ main { margin-top: 0; }
 /*Education*/
 
 .education-section { 
-    background: #ffffff; 
+    background: #f0efed; 
 }
 .edu-wrap { 
     max-width: 980px; 
@@ -452,7 +452,7 @@ main { margin-top: 0; }
 /*Experiences*/
 
 .experience-section { 
-    background: #ffffff; 
+    background: #f0efed; 
 }
 .exp-wrap { 
     max-width: 980px; 
@@ -563,7 +563,7 @@ main { margin-top: 0; }
 /*Projects*/
 
 .projects-section { 
-    background: #ffffff; 
+    background: #f0efed; 
 }
 .projects-wrap { 
     max-width: 1100px; 
@@ -658,7 +658,7 @@ main { margin-top: 0; }
 /*Contact*/
 
 .contact-section { 
-    background: #ffffff;
+    background: #f0efed;
 }
 .contact-wrap { 
     max-width: 720px; 

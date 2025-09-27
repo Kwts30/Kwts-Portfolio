@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Contact button: smooth-scroll to Contact section
-    const contactButtons = document.querySelectorAll('.contact-btn, .hero-contact-btn');
+    // Contact actions: smooth-scroll to Contact section (do not hijack download links)
     const contactSection = document.querySelector('#contact');
-    contactButtons.forEach(button => {
+    // Header/button elements that should always scroll to contact
+    document.querySelectorAll('.contact-btn').forEach(button => {
         button.addEventListener('click', function(e) {
             e.preventDefault();
             if (!contactSection) return;
@@ -34,8 +34,18 @@ document.addEventListener('DOMContentLoaded', function() {
             window.scrollTo({ top: targetTop, behavior: 'smooth' });
         });
     });
+    // Only bind smooth-scroll on hero links that explicitly target #contact
+    document.querySelectorAll('a.hero-contact-btn[href="#contact"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (!contactSection) return;
+            const headerHeight = document.querySelector('.sticky-header')?.offsetHeight || 0;
+            const targetTop = contactSection.offsetTop - headerHeight;
+            window.scrollTo({ top: targetTop, behavior: 'smooth' });
+        });
+    });
     
-    // Liquid glass header on scroll (keeps header position unchanged)
+    // header on scroll
     (() => {
         const header = document.querySelector('.sticky-header');
         if (!header) return;
